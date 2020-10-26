@@ -28,11 +28,19 @@ public final class Jsh {
 
     public static void executarComando(ComandoPrompt comando) {
 
-        throw new RuntimeException("Método ainda não implementado.");
-    }
+        List<String> args = comando.getArgumentos();
 
-    public static int executarPrograma(ComandoPrompt comando) {
-        throw new RuntimeException("Método ainda não implementado.");
+        switch (comando.getNome()) {
+            case "encerrar":
+                System.out.println("Encerrando JSH...");
+                System.exit(0);
+                break;
+            case "relogio":
+                ComandosInternos.exibirRelogio();
+                break;
+            default:
+                break;
+        }
     }
 
     public static void main(String[] args) {
