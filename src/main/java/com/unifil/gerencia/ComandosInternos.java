@@ -1,3 +1,5 @@
+package com.unifil.gerencia;
+
 import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
@@ -8,7 +10,7 @@ import java.time.format.DateTimeFormatter;
 import java.time.LocalDateTime;
 
 /**
- * Write a description of class ComandosInternos here.
+ * Write a description of class com.unifil.gerencia.ComandosInternos here.
  *
  * @author Ricardo Inacio Alvares e Silva
  * @version 180823
